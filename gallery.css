@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: 20px;
+}
+
+.row{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.gallery img{
+    height: 320px;
+    width: 250px;
+    object-fit: cover;
+    padding-bottom: 10px;
+}
+
+@media (max-width:500px) {
+    .gallery img{
+        width: 100%;
+        height: auto;
+    }
+}
